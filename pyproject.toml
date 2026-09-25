@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ven-reference"
+version = "0.1.0"
+description = "Reference implementation of Variable Elimination Networks"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
